@@ -1,7 +1,7 @@
 @extends('base')
 @section('container-principal')
 <form action="{{route('produto.store')}}" method="POST" >
-    @csrf
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Nome</label>
       <input type="text" name="nome"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
