@@ -19,6 +19,17 @@ class ProdutosController extends Controller
         return view('produtos', compact('subtitulo', 'produtos'));
     }
 
+       /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function merda()
+    {
+
+        return view('produtos');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -26,7 +37,7 @@ class ProdutosController extends Controller
      */
     public function create()
     {
-        
+
         return view('formprodutos');
     }
 
