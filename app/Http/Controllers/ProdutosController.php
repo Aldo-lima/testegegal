@@ -27,7 +27,7 @@ class ProdutosController extends Controller
     public function merda()
     {
 
-        return view('merda');
+        return view('teste.teste');
     }
 
     /**

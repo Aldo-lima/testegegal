@@ -19,5 +19,5 @@ route::get('/produto/create',[ProdutosController::class, 'create'])->name('produ
 route::get('/produto/merda',[ProdutosController::class, 'merda'])->name('produto.merda');
 route::post('/produto/store/',[ProdutosController::class, 'store'])->name('produto.store');
 Route::get('/', function () {
-    return view('welcome');
+    return view('base');
 });
